@@ -5,4 +5,8 @@
 
 **Install instructions**
  * Place .vim under home directory
- * Download Vundle
+ * Download Vundle and install ( https://github.com/VundleVim/Vundle.vim )
+
+**Info**
+
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
