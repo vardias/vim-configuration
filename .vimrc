@@ -26,7 +26,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'davidhalter/jedi-vim'
 " A vim color scheme for 16-color terminals
 Plugin 'noahfrederick/vim-noctu'
-"A vim plugin wich shows a git diff in the gutter (sign column) and stages/reverts hunks
+"A vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks
 Plugin 'airblade/vim-gitgutter'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
@@ -34,6 +34,10 @@ Plugin 'L9'
 Plugin 'lokaltog/vim-powerline'
 " Robot framework plugin
 Plugin 'mfukar/robotframework-vim'
+" Tag Bar
+Plugin 'majutsushi/tagbar'
+" Fuzzy search
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,3 +84,10 @@ filetype plugin indent on    " required
   map <C-k> <C-W>k
   map <C-h> <C-W>h
   map <C-l> <C-W>l
+
+" Enable plugin TagBar
+  nmap <F8> :TagbarToggle<CR>
+
+" Basic Options Fuzzy search (ctrlp)
+  let g:ctrlp_map = '<c-p>'
+  let g:ctrlp_cmd = 'CtrlP'
